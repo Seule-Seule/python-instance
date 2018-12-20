@@ -34,7 +34,9 @@ def Login():
     while True: 
         while True:       
             flag = input("$ Please Sign in(0) or Sign up(1):\n>>")
-            if int(flag) == 1 or int(flag) == 0:
+            if flag != str(1) and flag != str(0):
+                print("$ Invalid input!Please try again: \n")
+            else:
                 break
 
         # 注册功能
