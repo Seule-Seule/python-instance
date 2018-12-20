@@ -13,7 +13,7 @@ import password
 
 
 if __name__ == '__main__':
-    # init.init()
+    init.init()
     init.logo()
     init.Login()
     while True:

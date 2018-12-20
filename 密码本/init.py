@@ -1,10 +1,19 @@
 import csv
 import aes
+import time
+import sys
+
 
 def init ():
     '''
     系统启动页面进度条加载。
     '''
+    for i in range(101):
+        sys.stdout.write('\r')
+        sys.stdout.write("%s%% |%s" %(int(i%101), int(i%101)*'#')+'|')
+        sys.stdout.flush()
+        time.sleep(0.02)
+    sys.stdout.write('\n')
 
 def logo():
     '''
@@ -15,7 +24,7 @@ def logo():
     print("\ `--.| |__ | | | | |    | |__          * auother : seule                 ")
     print(" `--. \  __|| | | | |    |  __|             * Email : 2809713313@qq.com   ")
     print("/\__/ / |___| |_| | |____| |____                 * Blog : www.seule.cn    ")
-    print("\____/\____/ \___/\_____/\_____/                     * Veision : SEULE-3.0")
+    print("\____/\____/ \___/\_____/\_____/                     * Veision : SEULE-3.1")
     
 def Login(): 
     '''
