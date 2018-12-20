@@ -13,7 +13,9 @@ import password
 
 
 if __name__ == '__main__':
-    init.init()
+    # init.init()
+    init.logo()
+    init.Login()
     while True:
         choose = input("$ You can choose write password(0) or read password(1) : \n>>")
         if int(choose) == 0:
